@@ -37,3 +37,6 @@
 
 # Build
 /build
+
+# Log
+/log
