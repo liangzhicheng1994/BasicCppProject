@@ -7,7 +7,7 @@ void InitGlog(const char* argv0) {
   FLAGS_alsologtostderr = true;
   FLAGS_colorlogtostderr = true;
   FLAGS_stderrthreshold = google::GLOG_INFO;
-  google::SetLogFilenameExtension(".log");
+  FLAGS_max_log_size = 20;
   google::InitGoogleLogging(argv0);
   google::InstallFailureSignalHandler();
 }

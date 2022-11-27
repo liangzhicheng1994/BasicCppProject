@@ -1,12 +1,12 @@
 #include <cstdint>
 #include <iostream>
+#include <map>
 #include <memory>
 #include <string>
+#include <vector>
 
 #include "flags.h"
 #include "logger.h"
-
-using namespace std;
 
 int main(int argc, char* argv[]) {
   google::ParseCommandLineFlags(&argc, &argv, true);
