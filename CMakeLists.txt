@@ -9,16 +9,16 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 
-set(Boost_DIR /opt/pkgs/boost/lib/cmake/Boost-1.80.0)
-find_package(Boost 1.80.0 REQUIRED COMPONENTS filesystem)
+set(Boost_DIR /opt/pkgs/lib/cmake/Boost-1.81.0)
+find_package(Boost 1.81.0 REQUIRED COMPONENTS filesystem)
 
-set(Poco_DIR /opt/pkgs/poco/lib/cmake/Poco)
+set(Poco_DIR /opt/pkgs/lib/cmake/Poco)
 find_package(Poco REQUIRED Foundation)
 
-set(gflags_DIR /opt/pkgs/gflags/lib/cmake/gflags)
+set(gflags_DIR /opt/pkgs/lib/cmake/gflags)
 find_package(gflags REQUIRED)
 
-set(glog_DIR /opt/pkgs/glog/lib/cmake/glog)
+set(glog_DIR /opt/pkgs/lib/cmake/glog)
 find_package(glog 0.6.0 REQUIRED)
 
 include_directories(${PROJECT_SOURCE_DIR}/include)
